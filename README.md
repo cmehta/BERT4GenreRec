@@ -35,3 +35,6 @@ python main.py --template train_bert
 ## MovieLens-1m
 
 We observe HR@10=0.923 and NDCG@10=0.772 on MovieLens-1m
+
+# EDA
+EDA of the dataset can be visualized under notebook folder
