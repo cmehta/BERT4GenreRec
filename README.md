@@ -6,6 +6,14 @@ To achieve the same we are implementing an end to end model inspired by:
 > **BERT4Rec: Sequential Recommendation with BERT (Sun et al.)**  
 
 and lets you train them on MovieLens-1m and MovieLens-20m.
+# Data
+## MovieLens-1 million
+http://files.grouplens.org/datasets/movielens/ml-1m.zip
+
+## MovieLens-20 million
+http://files.grouplens.org/datasets/movielens/ml-20m.zip
+
+Running the code would automatically download the required data, if it's not present.
 
 # Usage
 
@@ -33,8 +41,21 @@ python main.py --template train_bert
 
 # Test Set Results
 ## MovieLens-1m
+| dataset       | Metrics | Test Result | Training Results| 
+| ------------- |:-------:|:-----------:|:---------------:|
+|               | HR@1    | 0.631       | 0.683           |
+|               | HR@5    | 0.854       | 0.884           |
+|               | HR@10   | 0.923       | 0.943           |
+|               | HR@20   | 0.972       | 0.981           |
+|               | HR@40   | 0.994       | 0.996           |
+| Movie Lens 1M |:-------:|:-----------:|:---------------:|
+|               | NDCG@1  | 0.631       | 0.683           |
+|               | NDCG@5  | 0.75        | 0.791           |
+|               | NDCG@10 | 0.772       | 0.810           |
+|               | NDCG@20 | 0.785       | 0.820           |
+|               | NDCG@40 | 0.79        | 0.823           |
+|-------------  |:-------:|:-----------:|:---------------:|
 
-We observe HR@10=0.923 and NDCG@10=0.772 on MovieLens-1m
 
 # EDA
 EDA of the dataset can be visualized under notebook folder
